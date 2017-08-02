@@ -1,0 +1,6 @@
+<App Background="#000">
+	<StackPanel Margin="0,50,0,0">
+		<TaskType/>
+		<TaskCategory/>
+	</StackPanel>
+</App>

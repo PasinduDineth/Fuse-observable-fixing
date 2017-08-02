@@ -1,0 +1,18 @@
+<Panel ux:Class="TaskCategory">
+<JavaScript File="main.js"/>
+
+	<Grid RowCount="1" ColumnCount="1" Navigation="pageControl">
+	 <!--<StackPanel Navigation="pageControl" Orientation="Horizontal" ItemSpacing="5">-->
+   <PageControl ux:Name="pageControl" Row="0" Column="1">
+       <Each Items="{Categoryitems}">
+		 <Page Name="current">
+			<Text Row="0" Column="0" TextAlignment="Center" Value="{name}" FontSize="12" Alignment="Center" />
+			<WhileActive>
+				<Callback Handler="{checkCategory}"/>
+			</WhileActive>
+		 </Page>
+		</Each>
+    </PageControl>
+<!--</StackPanel>-->
+</Grid>
+</Panel>
